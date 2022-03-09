@@ -114,3 +114,6 @@ gs-loc.apple.com
 bag.itunes.apple.com
 apple.news
 news.iadsdk.apple.com
+
+#3 mt2.google.cn网址在国内已无法访问,用于访问google卫星地图
+mt2.google.cn
