@@ -32,26 +32,29 @@ jobs:
           python3 gfwlist.py
           python3 build_confs.py
           cd ..
+          git add .
+          git commit -m "Nightly build" -m "已合并最新的去广告规则及 GFWList"
+          git push
 
-      - name: Create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
-          body: Nightly build with updated ad and gfwlist rules.
-          draft: false
-          prerelease: false
+    #   - name: Create release
+    #     id: create_release
+    #     uses: actions/create-release@v1
+    #     env:
+    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     with:
+    #       tag_name: ${{ github.run_number }}
+    #       release_name: Release ${{ github.run_number }}
+    #       body: Nightly build with updated ad and gfwlist rules.
+    #       draft: false
+    #       prerelease: false
 
-      - name: Upload release asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: sr_banlist_ad.conf
-          asset_name: sr_banlist_ad.conf
-          asset_content_type: text/plain
+    #   - name: Upload release asset
+    #     id: upload-release-asset
+    #     uses: actions/upload-release-asset@v1
+    #     env:
+    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     with:
+    #       upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #       asset_path: sr_banlist_ad.conf
+    #       asset_name: sr_banlist_ad.conf
+    #       asset_content_type: text/plain
