@@ -1,5 +1,11 @@
 ## 最完善的 iOS 翻墙规则
 
+20240201:
+
+由于原作者已经不再自动更新仓库，所以这是从 zhouzhouprogram/Shadowrocket-ADBlock-Rules 仓库地址 fork 并部署的第三方仓库链接
+
+采用 github actions 每天自动发布更新。
+
 由于原作者已经不再自动更新仓库，所以这是从 h2y 仓库地址 fork 并部署的第三方仓库链接
 
 本仓库每日自动发布更新, 或许也会有一些简单的维护
