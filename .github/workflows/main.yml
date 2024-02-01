@@ -52,6 +52,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: factory/sr_banlist_ad.conf
+          asset_path: sr_banlist_ad.conf
           asset_name: sr_banlist_ad.conf
           asset_content_type: text/plain
