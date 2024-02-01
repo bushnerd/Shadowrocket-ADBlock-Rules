@@ -37,10 +37,21 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by GitHub Actions automatically
-        # 添加生成的配置文件到发布资产中
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: nightly-${{ steps.create_release.outputs.timestamp }}
+          release_name: Nightly Build ${{ steps.create_release.outputs.timestamp }}
+          body: Nightly build with updated ad and gfwlist rules.
+          draft: false
+          prerelease: false
+
+      - name: Upload release asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: factory/sr_banlist_ad.conf
           asset_name: sr_banlist_ad.conf
-          asset_content_type: application/octet-stream
+          asset_content_type: text/plain
