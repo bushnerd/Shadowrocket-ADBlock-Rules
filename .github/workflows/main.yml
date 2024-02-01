@@ -32,6 +32,8 @@ jobs:
         run: |
           git config --global user.email "scutxd@gmail.com "
           git config --global user.name "bushnerd"
+          git fetch --all
+          git reset --hard origin/master
           cd factory
           python3 ad.py
           python3 gfwlist.py
