@@ -4,6 +4,9 @@
 #
 
 
+#对应sr_banlist_ad.conf
+#此网站暂时还能正常访问 
+DOMAIN-SUFFIX,gac-geo.googlecnapps.cn,Direct
 {{manual_reject}}
 
 {{ad}}

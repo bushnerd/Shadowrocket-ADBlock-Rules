@@ -1,4 +1,5 @@
 # 手工定义的 Direct 列表
+# 这里只会影响那几个直连的名单，在sr_banlist_ad.conf需要添加在此处没有用。
 
 #153
 icloud-content.com
