@@ -39,8 +39,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: nightly-$(date +%Y-%m-%d-%H-%M-%S)
-          release_name: Nightly Build $(date +%Y-%m-%d-%H-%M-%S)
+          tag_name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
           body: Nightly build with updated ad and gfwlist rules.
           draft: false
           prerelease: false
