@@ -2,7 +2,7 @@
 
 20240201:
 
-由于原作者已经不再自动更新仓库，所以这是从 bushnerd/Shadowrocket-ADBlock-Rules 仓库地址 fork 并部署的第三方仓库链接
+由于原作者已经不再自动更新仓库，所以这是从 zhouzhouprogram/Shadowrocket-ADBlock-Rules 仓库地址 fork 并部署的第三方仓库链接
 
 采用 github actions 每天自动发布更新。
 
