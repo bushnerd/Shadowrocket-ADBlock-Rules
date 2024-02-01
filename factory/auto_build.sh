@@ -1,8 +1,5 @@
 #!/bin/bash
 
-Path=/root/Shadowrocket-ADBlock-Rules
-cd $Path
-
 git fetch --all
 git reset --hard origin/master
 
