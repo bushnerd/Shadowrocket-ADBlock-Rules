@@ -34,8 +34,7 @@ jobs:
           cd ..
           git add .
           git commit -m "Nightly build" -m "已合并最新的去广告规则及 GFWList"
-          git push
-
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/bushnerd/Shadowrocket-ADBlock-Rules.git
     #   - name: Create release
     #     id: create_release
     #     uses: actions/create-release@v1
