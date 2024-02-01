@@ -27,9 +27,11 @@ jobs:
 
       - name: Run scripts
         run: |
-          python3 factory/ad.py
-          python3 factory/gfwlist.py
-          python3 factory/build_confs.py
+          cd factory
+          python3 ad.py
+          python3 gfwlist.py
+          python3 build_confs.py
+          cd ..
 
       - name: Create release
         id: create_release
