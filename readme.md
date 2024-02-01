@@ -2,7 +2,7 @@
 
 20240201:
 
-由于原作者已经不再自动更新仓库，所以这是从 zhouzhouprogram/Shadowrocket-ADBlock-Rules 仓库地址 fork 并部署的第三方仓库链接
+由于原作者已经不再自动更新仓库，所以这是从 bushnerd/Shadowrocket-ADBlock-Rules 仓库地址 fork 并部署的第三方仓库链接
 
 采用 github actions 每天自动发布更新。
 
@@ -16,19 +16,19 @@
 
 这里是一系列好用的翻墙规则，针对 [Shadowrocket](https://liguangming.com/Shadowrocket) 开发，支持广告过滤。规则定义了哪些网站可以直连，哪些必须走代理，规则是一个纯文本文件，无法提供翻墙功能。使用 Python 按照一定的规则和模板定期自动生成，并且使用开源的力量，集众人之力逐渐完善。
 
-**正在使用手机浏览本页面的用户 [请点击这里](https://github.com/h2y/Shadowrocket-ADBlock-Rules/blob/master/readme.md)，查看完整的说明文档。**
+**正在使用手机浏览本页面的用户 [请点击这里](https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/blob/master/readme.md)，查看完整的说明文档。**
 
 **本规则具有以下特点：**
 
 - 黑名单由最新版 GFWList 自动转换；白名单针对全球 top500 站点的连通情况定期自动生成。
 - 自动转换最新版本的 `EasyList, Eaylist China, 乘风规则` 为 SR 规则，全面去除广告且去除重复。
-- 也包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。（[常见广告过滤效果统计](https://github.com/h2y/Shadowrocket-ADBlock-Rules/issues/40)）
+- 也包括自定义的广告过滤规则，针对 iOS 端的网页广告、App 广告和视频广告。（[常见广告过滤效果统计](https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/issues/40)）
 - 提供多个规则文件让大家自由选择或者自由切换使用。
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性。
 
 ## 规则列表
 
-![规则选择指南](https://h2y.github.io/Shadowrocket-ADBlock-Rules/figure/guide.png)
+![规则选择指南](https://bushnerd.github.io/Shadowrocket-ADBlock-Rules/figure/guide.png)
 
 | 规则                                     | 规定代理的网站        | 规定直连的网站                      |
 | ---------------------------------------- | --------------------- | ----------------------------------- |
@@ -84,13 +84,13 @@
 
 ## 问题反馈
 
-任何问题欢迎在 [Issues](https://github.com/h2y/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
+任何问题欢迎在 [Issues](https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
 
 你的反馈会让此规则变得更加完美。
 
 **如何贡献代码？**
 
-通常的情况下，对 [factory 目录](https://github.com/h2y/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
+通常的情况下，对 [factory 目录](https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
 
 ## 捐助
 
@@ -110,7 +110,7 @@
 - 直连：正常的网站
 - 包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_banlist_ad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_banlist_ad.conf>
 
 ## 白名单过滤 + 广告
 
@@ -120,7 +120,7 @@
 - 代理：默认代理其余的所有境外网站
 - 包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_top500_whitelist_ad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_top500_whitelist_ad.conf>
 
 ## 黑名单过滤
 
@@ -130,7 +130,7 @@
 - 直连：正常的网站
 - 不包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_banlist.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_banlist.conf>
 
 ## 白名单过滤
 
@@ -140,19 +140,19 @@
 - 代理：默认代理其余的所有境外网站
 - 不包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_top500_whitelist.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_top500_whitelist.conf>
 
 ## 国内外划分 + 广告
 
 国内外划分，对中国网站直连，外国网站代理。包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_cnip_ad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_cnip_ad.conf>
 
 ## 国内外划分
 
 国内外划分，对中国网站直连，外国网站代理。不包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_cnip.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_cnip.conf>
 
 ## 直连去广告
 
@@ -161,7 +161,7 @@
 - 直连：所有请求
 - 包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_direct_banad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_direct_banad.conf>
 
 ## 代理去广告
 
@@ -171,7 +171,7 @@
 - 代理：其余所有请求
 - 包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_proxy_banad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_proxy_banad.conf>
 
 ## 回国规则
 
@@ -181,7 +181,7 @@
 - 代理：中国网站
 - 不包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_backcn.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_backcn.conf>
 
 ## 回国规则 + 广告
 
@@ -191,4 +191,4 @@
 - 代理：中国网站
 - 包含广告过滤
 
-规则地址：<https://github.com/zhouzhouprogram/Shadowrocket-ADBlock-Rules/raw/master/sr_backcn_ad.conf>
+规则地址：<https://github.com/bushnerd/Shadowrocket-ADBlock-Rules/raw/master/sr_backcn_ad.conf>
