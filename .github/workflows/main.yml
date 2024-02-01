@@ -39,7 +39,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: nightly-${{ steps.create_release.outputs.timestamp }}
+          #   tag_name: nightly-${{ steps.create_release.outputs.timestamp }}
           release_name: Nightly Build ${{ steps.create_release.outputs.timestamp }}
           body: Nightly build with updated ad and gfwlist rules.
           draft: false
